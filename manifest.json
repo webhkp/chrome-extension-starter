@@ -3,12 +3,21 @@
     "name": "Copy Page Title & URL by WEBHKP",
     "version": "1.0",
     "description": "Copies the page title and URL to the clipboard.",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["activeTab", "scripting", "contextMenus"],
     "background": {
       "service_worker": "background.js"
     },
     "action": {
       "default_title": "Copy Title & URL"
+    },
+    "commands": {
+      "copy_page_info": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Y",
+          "mac": "Command+Shift+Y"
+        },
+        "description": "Copy page title and URL"
+      }
     }
   }
   
