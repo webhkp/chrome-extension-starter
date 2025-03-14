@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Copy Page Title & URL by WEBHKP",
+    "version": "1.0",
+    "description": "Copies the page title and URL to the clipboard.",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Copy Title & URL"
+    }
+  }
+  
